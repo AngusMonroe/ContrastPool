@@ -4,7 +4,7 @@ This is the official PyTorch implementation of ContrastPool from paper
 
 Link: [Arxiv](https://arxiv.org/abs/2307.11133).
 
-<img alt="Model" src="figs/framework.pdf" title="Framework"/>
+<img alt="Model" src="figs/framework.png" title="Framework"/>
 
 
 ## Data
