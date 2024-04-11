@@ -1,0 +1,38 @@
+{
+    "gpu": {
+        "use": true,
+        "id": 0
+    },
+    
+    "model": "ContrastPool",
+    "dataset": "taowu_schaefer100",
+    
+    "out_dir": "out/braindata_graph_classification/",
+
+    "params": {
+        "seed": 41,
+        "epochs": 1000,
+        "batch_size": 4,
+        "init_lr": 1e-2,
+        "lr_reduce_factor": 0.5,
+        "lr_schedule_patience": 25,
+        "min_lr": 1e-6,
+        "weight_decay": 0.0,
+        "print_epoch_interval": 5,
+        "max_time": 30
+    },
+    
+    "net_params": {
+        "L": 2,
+        "hidden_dim": 86,
+        "out_dim": 86,
+        "residual": true,
+        "readout": "mean",
+        "in_feat_dropout": 0.0,
+        "dropout": 0.0,
+        "batch_norm": true,
+        "sage_aggregator": "maxpool",
+        "self_loop": false,
+        "edge_feat": false
+    }
+}
