@@ -1,6 +1,6 @@
 # ContrastPool
 This is the official PyTorch implementation of ContrastPool from paper 
-*"Contrastive Graph Pooling for Explainable Classification of Brain Networks"* accepted by IEEE Transaction on Medical Imaging (TMI) 2024.
+*"Contrastive Graph Pooling for Explainable Classification of Brain Networks"* submitted to IEEE Transactions on Medical Imaging (TMI) 2024.
 
 Link: [Arxiv](https://arxiv.org/abs/2307.11133).
 
