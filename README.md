@@ -9,7 +9,7 @@ Link: [Arxiv](https://arxiv.org/abs/2307.11133).
 
 ## Data
 All Preprocessed data used in this paper are published in [this paper](https://proceedings.neurips.cc/paper_files/paper/2023/file/44e3a3115ca26e5127851acd0cedd0d9-Paper-Datasets_and_Benchmarks.pdf). 
-Data splits are stored in `./data/`. If you wanna process your own data, please check the dataloader script `./data/BrainNet.py`.
+Data splits and configurations are stored in `./data/` and `./configs/`. If you want to process your own data, please check the dataloader script `./data/BrainNet.py`.
 
 ## Usage
 
