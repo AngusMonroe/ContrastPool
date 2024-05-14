@@ -41,7 +41,7 @@ class EntropyLoss(nn.Module):
         return entropy
 
 
-class DiffCSLayer(nn.Module):
+class ContrastPoolLayer(nn.Module):
 
     def __init__(self, input_dim, assign_dim, output_feat_dim,
                  activation, dropout, aggregator_type, link_pred, batch_norm, pool_assign='GraphSage', max_node_num=0):
