@@ -1,6 +1,6 @@
 # ContrastPool
-This is the official PyTorch implementation of ContrastPool from paper 
-*"Contrastive Graph Pooling for Explainable Classification of Brain Networks"* submitted to IEEE Transactions on Medical Imaging (TMI) 2024.
+This is the official PyTorch implementation of ContrastPool from the paper 
+*"Contrastive Graph Pooling for Explainable Classification of Brain Networks"* published in IEEE Transactions on Medical Imaging (TMI) 2024.
 
 Link: [Arxiv](https://arxiv.org/abs/2307.11133).
 
@@ -20,12 +20,16 @@ Please check `baseline.sh` on how to run the project.
 If you find this code useful, please consider citing our paper:
 
 ```
-@article{xu2023contrastive,
-  title={Contrastive Graph Pooling for Explainable Classification of Brain Networks},
-  author={Xu, Jiaxing and Bian, Qingtian and Li, Xinhang and Zhang, Aihu and Ke, Yiping and Qiao, Miao and Zhang, Wei and Sim, Wei Khang Jeremy and Guly{\'a}s, Bal{\'a}zs},
-  journal={arXiv preprint arXiv:2307.11133},
-  year={2023}
-}
+@ARTICLE{10508252,
+  author={Xu, Jiaxing and Bian, Qingtian and Li, Xinhang and Zhang, Aihu and Ke, Yiping and Qiao, Miao and Zhang, Wei and Sim, Wei Khang Jeremy and Gulyás, Balázs},
+  journal={IEEE Transactions on Medical Imaging}, 
+  title={Contrastive Graph Pooling for Explainable Classification of Brain Networks}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Functional magnetic resonance imaging;Feature extraction;Task analysis;Data mining;Alzheimer's disease;Message passing;Brain modeling;Brain Network;Deep Learning for Neuroimaging;fMRI Biomarker;Graph Classification;Graph Neural Network},
+  doi={10.1109/TMI.2024.3392988}}
 ```
 
 ## Contact
