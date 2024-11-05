@@ -82,7 +82,7 @@ def train_val_pipeline(MODEL_NAME, DATASET_NAME, params, net_params, dirs):
 
             model = gnn_model(MODEL_NAME, net_params)
             model = model.to(device)
-            if net_params['contrast'] and MODEL_NAME in ['DiffPool', 'DiffCS']:
+            if net_params['contrast'] and MODEL_NAME in ['ContrastPool']:
                 model.cal_contrast(trainset, device)
             optimizer = optim.Adam(model.parameters(), lr=params['init_lr'], weight_decay=params['weight_decay'])
             scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min',
