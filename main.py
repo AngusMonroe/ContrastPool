@@ -94,7 +94,7 @@ def train_val_pipeline(MODEL_NAME, DATASET_NAME, params, net_params, dirs):
             epoch_train_accs, epoch_val_accs = [], []
 
             # batching exception for Diffpool
-            drop_last = True if MODEL_NAME in ['DiffPool', 'DiffCS'] else False
+            drop_last = True if MODEL_NAME in ['DiffPool', 'ContrastPool'] else False
 
             from train_TUs_graph_classification import train_epoch_sparse as train_epoch, evaluate_network_sparse as evaluate_network
 
@@ -140,7 +140,7 @@ def train_val_pipeline(MODEL_NAME, DATASET_NAME, params, net_params, dirs):
                         os.makedirs(ckpt_dir)
 
                     torch.save(model.state_dict(), '{}.pkl'.format(ckpt_dir + "/epoch_" + str(epoch)))
-                    if MODEL_NAME in ['DiffCS']:
+                    if MODEL_NAME in ['ContrastPool']:
                         torch.save(model.ad_adj, '{}.pkl'.format(log_dir + "/epoch_" + str(epoch)))
 
                         adj_files = glob.glob(log_dir + '/*.pkl')
@@ -379,7 +379,7 @@ def main():
     num_classes = len(np.unique(dataset.all.graph_labels))
     net_params['n_classes'] = num_classes
 
-    if MODEL_NAME in ['DiffPool', 'DiffCS']:
+    if MODEL_NAME in ['DiffPool', 'ContrastPool']:
         net_params['max_num_node'] = dataset.node_num
         # calculate assignment dimension: pool_ratio * largest graph's maximum
         # number of nodes  in the dataset
